@@ -15,7 +15,7 @@ export class TaskComponent implements OnInit {
 
   ngOnInit() {
   }
-submit(value){
+submit(){
   
   this.http.get('https://jsonplaceholder.typicode.com/todos').subscribe(data=>{
     console.log(data);
