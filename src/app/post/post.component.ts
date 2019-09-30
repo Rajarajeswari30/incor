@@ -14,7 +14,7 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
   }
-show(value){
+show(){
   this.http.get('https://jsonplaceholder.typicode.com/posts').subscribe(data=>{
     console.log(data);
     this.totalpost=data
