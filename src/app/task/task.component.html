@@ -2,7 +2,7 @@
         
     <h2>To-Do List</h2>
     <label>Search:</label>
-    <input type="search" [(ngModel)]="search" placeholder="search here">
+    <input type="search" [(ngModel)]="filt" placeholder="search here">
     <button (click)="submit()">Submit</button>
     <a [routerLink]="['/task1']">Create List</a>
 </body>
@@ -16,7 +16,7 @@
     <th>Completed</th>
 
 
-<tr *ngFor="let list of totallist | filter:search">
+<tr *ngFor="let list of totallist | filter:filt">
     <td>{{list.userId}}</td>
     <td>{{list.id}}</td>
     <td>{{list.title}}</td>
